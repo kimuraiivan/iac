@@ -1,0 +1,11 @@
+[Atv4WinSvr2019]
+191.235.67.78
+
+[Atv4WinSvr2019:vars]
+ansible_user= azureuser
+ansible_password= azureadmin@123
+ansible_connection= winrm
+ansible_port= 5986
+ansible_winrm_transport= ntlm
+ansible_winrm_server_cert_validation= ignore
+#ansible_winrm_scheme= https

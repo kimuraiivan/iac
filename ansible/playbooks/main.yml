@@ -1,0 +1,14 @@
+---
+- name: Windows EAD 
+  hosts: Atv4WinSvr2019
+  gather_facts: false
+
+  tasks:
+# Install and enable IIS on Windows server 2019
+    - name: Install IIS
+      win_feature:
+        name: "Web-Server"
+        state: present
+        restart: yes
+        include_sub_features: yes
+        include_management_tools: yes
